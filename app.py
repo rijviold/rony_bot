@@ -510,8 +510,7 @@ def main_handler(message):
         state[chat_id] = {"type": "wait_support_msg"}
         msg = (f'<tg-emoji emoji-id="{EMOJI["support"]}">💬</tg-emoji> <b>Support Center</b>\n'
                f'━━━━━━━━━━━━━━━━━━\n'
-               f'For help contact @ronymsjk ❤️
-Owner Reply as soon as his possible')
+               f'For help contact @ronymsjk Owner Reply as soon as his possible')
         bot.send_message(chat_id, msg)
         
     elif actual_text == "Tutorial":
