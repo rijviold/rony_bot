@@ -512,7 +512,7 @@ def main_handler(message):
                f'━━━━━━━━━━━━━━━━━━\n'
                f'For help contact @ronymsjk ❤️
 
-Owner Reply as soon as his possible 💛')
+Owner Reply as soon as his possible')
         bot.send_message(chat_id, msg)
         
     elif actual_text == "Tutorial":
