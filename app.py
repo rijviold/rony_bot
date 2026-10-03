@@ -523,7 +523,7 @@ def main_handler(message):
                 kb.append([{"text": t["name"], "url": t["url"], "icon_custom_emoji_id": t["emoji"], "style": "primary"}])
             msg = (f'<tg-emoji emoji-id="{EMOJI["sparkle"]}">✨</tg-emoji> <b>টিউটোরিয়াল গাইডলাইন</b>\n'
                    f'━━━━━━━━━━━━━━━━━━\n'
-                   f'বট ব্যবহার করতে কোনো সমস্যা হলে বা কোনো কাজ বুঝতে অসুবিধা হলে নিচের ভিডিওগুলো দেখতে পারেন। এখানে আপনার প্রয়োজনীয় সকল গাইডলাইন সুন্দরভাবে দেওয়া আছে। 👇')
+                   f'বট ব্যবহার করতে কোনো সমস্যা হলে, বা কোনো কাজ বুঝতে অসুবিধা হলে নিচের ভিডিওগুলো দেখতে পারেন। এখানে আপনার প্রয়োজনীয় সকল গাইডলাইন সুন্দরভাবে দেওয়া আছে। 👇')
             bot.send_message(chat_id, msg, reply_markup=json.dumps({"inline_keyboard": kb}))
 
     # ====== ADMIN MENU ======
