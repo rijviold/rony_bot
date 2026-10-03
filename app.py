@@ -79,7 +79,7 @@ db = {
     "users": {}, "products": {}, "deposits": [], "orders": [],
     "usedTxnIds": [], "pendingOrders": [], "validMails": [], "vouchers": {},
     "settings": {
-        "bot_name": "Proxy Market",
+        "bot_name": "R PROXXY STOR",
         "welcome_msg": '<tg-emoji emoji-id="6266995104687330978">✨</tg-emoji> <b>Welcome to {bot_name}</b>\n━━━━━━━━━━━━━━━━━━\n<tg-emoji emoji-id="6267068789146260253">💰</tg-emoji> Balance: <b>{bal:.2f} BDT / {usdt:.4f} USDT</b>\n━━━━━━━━━━━━━━━━━━\n<tg-emoji emoji-id="6267172559851099903">📌</tg-emoji> <i>নিচের মেনু থেকে আপনার প্রয়োজনীয় সার্ভিসটি বেছে নিন 👇</i>',
         "ui_overrides": {},
         "paymentMethods": {
