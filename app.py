@@ -939,12 +939,12 @@ def handle_state(message, chat_id, text):
         emoji_id = PAYMENT_EMOJIS.get(st["method"], EMOJI["money"])
         
         if st["method"] == "binance":
-            if amount <= 0.19: return bot.send_message(chat_id, f'<tg-emoji emoji-id="{EMOJI["danger"]}">❌</tg-emoji> পরিমাণ মিনিমাম 0.20 হতে হবে।')
+            if amount <= 0.29: return bot.send_message(chat_id, f'<tg-emoji emoji-id="{EMOJI["danger"]}">❌</tg-emoji> পরিমাণ মিনিমাম 0.30 হতে হবে।')
             bdt_amount = amount * db["settings"]["dollarRate"]
             msg = f'<tg-emoji emoji-id="{emoji_id}">💳</tg-emoji> <b>Deposit Request</b>\n\nMethod: <b>{pm["name"]}</b>\nAmount: <b>{amount} USD ({bdt_amount} BDT)</b>\n\nএই নাম্বারে/Pay ID তে ডলার পাঠান: <code>{pm["number"]}</code>\n\nপেমেন্ট সম্পন্ন হলে নিচের বাটনে ক্লিক করুন:'
             callback_amount = bdt_amount
         else:
-            if amount < 20: return bot.send_message(chat_id, f'<tg-emoji emoji-id="{EMOJI["danger"]}">❌</tg-emoji> সর্বনিম্ন ২০ টাকা লিখতে হবে।')
+            if amount < 30: return bot.send_message(chat_id, f'<tg-emoji emoji-id="{EMOJI["danger"]}">❌</tg-emoji> সর্বনিম্ন ৩০ টাকা লিখতে হবে।')
             msg = f'<tg-emoji emoji-id="{emoji_id}">💳</tg-emoji> <b>Deposit Request</b>\n\nMethod: <b>{pm["name"]}</b>\nAmount: <b>{amount} BDT ({amount/db["settings"]["dollarRate"]:.2f} USD)</b>\n\nএই নাম্বারে টাকা পাঠান: <code>{pm["number"]}</code>\n\nপেমেন্ট সম্পন্ন হলে নিচের বাটনে ক্লিক করুন:'
             callback_amount = amount
             
